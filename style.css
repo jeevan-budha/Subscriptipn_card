@@ -14,3 +14,120 @@
   --body-color:hsl(204, 43%, 93%);
   --background-color:hsl(218, 22%, 67%);
 }
+
+body{
+  background-color: var(--body-color);
+}
+section{
+   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  /* height: 60vh; */
+  width: 36rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  margin: 20px 20px;
+  border-radius: 5px;
+  overflow:hidden;
+}
+
+.container-first-child{
+  background-color: #ffffff;
+  padding:20px;
+}
+.container-first-child h3{
+  padding: 10px;
+  color: var(--primary-color);
+}
+.container-first-child h4{
+  padding: 10px;
+  color: var(--secondary-color);
+}
+
+.container-first-child p{
+  padding: 8px;
+  padding-bottom: 20px;
+  color: #958c8c;
+}
+
+.container-second-child{
+  display: flex;
+  justify-content:space-between;
+  /* flex-wrap: wrap; */
+  
+}
+
+.monthy-subscription{
+  color: #ffffff;
+  background-color: var(--primary-color);
+   padding-right: 3rem;
+}
+.why-us{
+  color: #fff;
+  background-color: hsl(179, 42%, 54%);
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.why-us h4{
+  padding-bottom: 20px;
+}
+.why-us p{
+  padding-bottom: 15px;
+  padding-inline: 2px;
+}
+.monthy-subscription h4{
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.monthy-subscription p{
+  padding-top: 20px;
+}
+#price{
+  font-size: 25px;
+  padding-left: 30px;
+}
+
+#full-access{
+  padding-left: 30px;
+  padding-top: 10px;
+}
+#btn{
+  margin-top:20px;
+  margin-left: 30px;
+  padding:5px 5.5rem;
+  color: #ffffff;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width:624px){
+  .container-second-child{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    width: 18.2rem;
+  }
+  .monthy-subscription{
+    padding-left:0px;
+  }
+  .monthy-subscription h4{
+  padding-left: 25px;
+  padding-top: 20px;
+}
+#price{
+  font-size: 25px;
+  padding-left: 25px;
+}
+
+#full-access{
+  padding-left: 25px;
+}
+}
