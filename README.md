@@ -1,0 +1,1 @@
+This project is a modern and responsive subscription pricing card UI built with HTML and CSS.
